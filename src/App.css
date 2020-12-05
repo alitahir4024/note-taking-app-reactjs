@@ -1,38 +1,178 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+  font-family: monospace;
+}
+
+body {
+  background-color: #eeeeee;
+  font-size: 1rem;
+}
+
+.NavBar {
+  height: auto;
+  background-color: black;
+  padding: 20px 0px;
+}
+
+.NavBar,
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-size: x-large;
+}
+
+.NavBar > h1 {
+  width: 45%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.actions {
+  width: 55%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.action-icon {
+  cursor: pointer;
+}
+
+.react_responsive_modal {
+  height: 55%;
+  border-radius: 5px;
+}
+
+.form_modal,
+.form_modal > form,
+.note-text {
+  display: grid;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+.form_modal {
+  height: 100%;
+}
+
+.form_close_btn {
+  display: none;
+}
+
+.form_modal > h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #444444;
+}
+
+.form_modal > form {
+  height: 45vh;
+}
+
+.form_modal > form > input {
+  padding: 10px 10px;
+  font-weight: normal;
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+  color: #757575;
+}
+
+.form_modal > form > input::placeholder,
+.form_modal > form > textarea::placeholder {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  color: #444444;
+  transition: all 0.5s;
+}
+
+.form_modal > form > input:focus::placeholder,
+.form_modal > form > textarea:focus::placeholder {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.form_modal > form > textarea {
+  padding: 10px 10px;
+}
+
+.form_modal > form > button {
+  padding: 15px 0px;
+}
+
+.Board {
+  height: auto;
+  width: 100%;
+  display: inline-block;
+}
+
+.note {
+  display: inline-block;
+  height: 40vh;
+  width: 90%;
+  margin: 30px 20px;
+  padding-top: 13px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px -2px rgba(0, 0, 0, 0.3);
+}
+
+.note-text {
+  height: 95%;
+  width: 95%;
+  grid-template-columns: 0.99fr;
+  grid-template-rows: 4.5vh 5vh 0.85fr;
+  margin: auto;
+}
+
+.note-text > h1 {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  color: #323232;
+}
+
+.note-text > h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #4d4b4b;
+  padding-top: 10px;
+}
+
+.note-text > p {
+  overflow-y: scroll;
+  font-weight: normal;
+  font-size: large;
+  line-height: 3vh;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 550px) and (max-width: 850px) {
+  .react_responsive_modal {
+    height: 50%;
+    width: 50vw;
+  }
+
+  .note {
+    height: 30vh;
+    width: 40%;
+    margin: 50px 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 851px) {
+  .react_responsive_modal {
+    height: 55%;
+    width: 50vw;
   }
-  to {
-    transform: rotate(360deg);
+
+  .note {
+    height: 30vh;
+    width: 30%;
+    margin: 50px 20px;
   }
 }
