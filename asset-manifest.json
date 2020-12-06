@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/note-taking-app-reactjs/static/css/main.e5631d50.chunk.css",
-    "main.js": "/note-taking-app-reactjs/static/js/main.cc3b3d7f.chunk.js",
-    "main.js.map": "/note-taking-app-reactjs/static/js/main.cc3b3d7f.chunk.js.map",
+    "main.css": "/note-taking-app-reactjs/static/css/main.c5740da3.chunk.css",
+    "main.js": "/note-taking-app-reactjs/static/js/main.e737db6a.chunk.js",
+    "main.js.map": "/note-taking-app-reactjs/static/js/main.e737db6a.chunk.js.map",
     "runtime-main.js": "/note-taking-app-reactjs/static/js/runtime-main.0b077459.js",
     "runtime-main.js.map": "/note-taking-app-reactjs/static/js/runtime-main.0b077459.js.map",
     "static/css/2.26b8b167.chunk.css": "/note-taking-app-reactjs/static/css/2.26b8b167.chunk.css",
-    "static/js/2.a7e2584f.chunk.js": "/note-taking-app-reactjs/static/js/2.a7e2584f.chunk.js",
-    "static/js/2.a7e2584f.chunk.js.map": "/note-taking-app-reactjs/static/js/2.a7e2584f.chunk.js.map",
+    "static/js/2.8c3f61b6.chunk.js": "/note-taking-app-reactjs/static/js/2.8c3f61b6.chunk.js",
+    "static/js/2.8c3f61b6.chunk.js.map": "/note-taking-app-reactjs/static/js/2.8c3f61b6.chunk.js.map",
     "static/js/3.38b93720.chunk.js": "/note-taking-app-reactjs/static/js/3.38b93720.chunk.js",
     "static/js/3.38b93720.chunk.js.map": "/note-taking-app-reactjs/static/js/3.38b93720.chunk.js.map",
     "index.html": "/note-taking-app-reactjs/index.html",
     "static/css/2.26b8b167.chunk.css.map": "/note-taking-app-reactjs/static/css/2.26b8b167.chunk.css.map",
-    "static/css/main.e5631d50.chunk.css.map": "/note-taking-app-reactjs/static/css/main.e5631d50.chunk.css.map",
-    "static/js/2.a7e2584f.chunk.js.LICENSE.txt": "/note-taking-app-reactjs/static/js/2.a7e2584f.chunk.js.LICENSE.txt"
+    "static/css/main.c5740da3.chunk.css.map": "/note-taking-app-reactjs/static/css/main.c5740da3.chunk.css.map",
+    "static/js/2.8c3f61b6.chunk.js.LICENSE.txt": "/note-taking-app-reactjs/static/js/2.8c3f61b6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0b077459.js",
     "static/css/2.26b8b167.chunk.css",
-    "static/js/2.a7e2584f.chunk.js",
-    "static/css/main.e5631d50.chunk.css",
-    "static/js/main.cc3b3d7f.chunk.js"
+    "static/js/2.8c3f61b6.chunk.js",
+    "static/css/main.c5740da3.chunk.css",
+    "static/js/main.e737db6a.chunk.js"
   ]
 }
