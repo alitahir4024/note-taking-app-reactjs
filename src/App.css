@@ -41,7 +41,7 @@ body {
   cursor: pointer;
 }
 
-.react_responsive_modal {
+.react_responsive_modal_1 {
   height: 55%;
   border-radius: 5px;
 }
@@ -70,6 +70,10 @@ body {
 
 .form_modal > form {
   height: 45vh;
+}
+
+.search_modal > form {
+  height: 40vh;
 }
 
 .form_modal > form > input {
@@ -113,7 +117,7 @@ body {
   display: inline-block;
   height: 40vh;
   width: 90%;
-  margin: 30px 20px;
+  margin: 15px 15px;
   padding-top: 13px;
   background-color: #fff;
   border-radius: 5px;
@@ -152,7 +156,7 @@ body {
 }
 
 @media (min-width: 550px) and (max-width: 850px) {
-  .react_responsive_modal {
+  .react_responsive_modal_1 {
     height: 50%;
     width: 50vw;
   }
@@ -165,9 +169,9 @@ body {
 }
 
 @media (min-width: 851px) {
-  .react_responsive_modal {
+  .react_responsive_modal_1 {
     height: 55%;
-    width: 50vw;
+    width: 40vw;
   }
 
   .note {

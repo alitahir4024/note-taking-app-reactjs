@@ -4,10 +4,10 @@ import { Modal } from "react-responsive-modal";
 const FormModal = (props) => {
   return (
     <Modal
-      open={props.showStatement}
-      onClose={props.closeModalFunction}
+      open={props.noteModalShowStatement}
+      onClose={props.closeFormModalFunction}
       classNames={{
-        modal: "react_responsive_modal",
+        modal: "react_responsive_modal_1",
         closeIcon: "form_close_btn",
       }}
       center
@@ -40,7 +40,7 @@ const FormModal = (props) => {
             value={props.noteDescriptionValue}
             required
           />
-          <button type="submit" onClick={props.closeModalFunction}>
+          <button type="submit" onClick={props.closeFormModalFunction}>
             Create Note
           </button>
         </form>

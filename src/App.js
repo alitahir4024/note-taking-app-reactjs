@@ -2,19 +2,32 @@ import { Fragment, useState } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import FormModal from "./components/formModal";
+import SearchModal from "./components/searchModal";
 import Board from "./components/Board";
 
 function App() {
-  // show and hide implementations on modal
+  // show and hide implementations on form modal
 
-  const [show, setShow] = useState(false);
+  const [showFormModal, setShowFormModal] = useState(false);
 
-  const showModal = () => {
-    setShow(true);
+  const openFormModal = () => {
+    setShowFormModal(true);
   };
 
-  const closeModal = () => {
-    setShow(false);
+  const closeFormModal = () => {
+    setShowFormModal(false);
+  };
+
+  // show and hide implementation on search modal
+
+  const [showSearchModal, setShowSearchModal] = useState(false);
+
+  const openSearchModal = () => {
+    setShowSearchModal(true);
+  };
+
+  const closeSearchModal = () => {
+    setShowSearchModal(false);
   };
 
   // got the main and sub title of the note
@@ -57,16 +70,35 @@ function App() {
     setNotes("");
   };
 
+  // searching the notes
+
+  const [searchNoteQuery, setSearchNoteQuery] = useState("");
+
+  const handleNoteSearchFunction = (e) => {
+    setSearchNoteQuery(e.target.value);
+  };
+
+  const handleSearchFunction = (e) => {
+    e.preventDefault();
+    const searchedNotes = notes.filter((obj) => {
+      return obj.noteMainTitle.includes(searchNoteQuery);
+    });
+    setNotes(searchedNotes);
+    console.log(searchedNotes);
+  };
+
   return (
     <Fragment>
       <NavBar
-        showModalFunction={showModal}
+        // open modals functions props
+        showFormModalFunction={openFormModal}
+        showSearchModalFunction={openSearchModal}
         noteClearanceFunction={handleClearNotes}
       />
       <FormModal
         // modal props
-        closeModalFunction={closeModal}
-        showStatement={show}
+        noteModalShowStatement={showFormModal}
+        closeFormModalFunction={closeFormModal}
         // input function props
         noteMainTitleFunction={handleNoteMainTitle}
         noteSubTitleFunction={handleNoteSubTitle}
@@ -77,6 +109,15 @@ function App() {
         noteDescriptionValue={noteDescription}
         // note submission prop
         noteSubmissionFunction={handleNoteSubmission}
+      />
+      <SearchModal
+        // modal props
+        searchModalShowStatement={showSearchModal}
+        closeSearchModalFunction={closeSearchModal}
+        // note search props
+        noteSearchFunction={handleSearchFunction}
+        searchQueryValue={searchNoteQuery}
+        noteSearchQueryFunction={handleNoteSearchFunction}
       />
       <Board notesData={notes} />
     </Fragment>
