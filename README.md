@@ -20,4 +20,4 @@ Note Taking App developed using ReactJS and its features.
 
 ## Project Preview:
 
-[Note Taking App](https://ali-tahir4024.github.io/note-taking-app-reactjs/)
+[Note Taking App](https://alitahir4024.github.io/note-taking-app-reactjs/)
